@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Desafio Latam</title>
+    <style media="screen">
+      body{
+        margin: 0;
+        font-family: Arial,Helvetica,sans-serif;
+      }
+      .clearfix{
+        clear: both;
+      }
+      .izquierda,.flotar>*{
+        float: left;
+      }
+      .derecha{
+        float: right;
+      }
+      ul.l-hor{
+        padding: 0;
+      }
+      ul.l-hor>li{
+        list-style: none;
+        float: left;
+      }
+      div.flotradores-centrados{
+        float: right;
+        position: relative;
+        left: -50%;
+      }
+      div.flotradores-centrados>ul{
+        position: relative;
+        left: 50%;
+      }
+      div.listado-flotador>ul{
+        padding: 0;
+      }
+      div.listado-flotador>ul>li,
+      div.flotradores-centrados>ul>li{
+        float: left;
+        list-style: none;
+      }
+
+      .fila{
+        width: 100%;
+      }
+      .fila div{
+        box-sizing: border-box;
+      }
+
+      .boton{
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin: auto 5px;
+      }
+      .boton.azul{
+        background-color: rgb(2, 79, 182);
+        color: white;
+      }
+      .boton.verde{
+        background-color: rgb(43, 164, 0);
+        color: white;
+      }
+      .boton.blanco{
+        background-color: white;
+        border: 1px solid rgb(150, 150, 150);
+        color: black;
+      }
+
+      .navbar{
+        margin: auto;
+        width: 70%;
+      }
+      .texto-centrado{
+        text-align: center;
+      }
+      /* FILA 1 - CABEZA */
+      .cabeza{
+        background-image: url('images/bg.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+      }
+      .cabeza.fila{
+        padding: 20px 0;
+      }
+      .bloque-contenido{
+        max-width: 500px;
+        margin: auto;
+      }
+      .cabeza li>.logo{
+        height: 50px;
+      }
+      .cabeza .l-hor.derecha>li{
+        margin: 0 15px;
+        color: rgb(100, 100, 100);
+      }
+      .cabeza h1{
+        font-weight: lighter;
+      }
+      .cabeza .botones{
+        margin: auto;
+      }
+      /* FILA 2 - DESCRIPCION */
+      .descripcion img{
+        width: 70%;
+      }
+
+      /* FILA 3 - SOLICITUD */
+      .solicitud{
+        border: 0 solid rgb(190, 190, 190);
+        border-width: 1px 0;
+        background-color: rgb(230, 230, 230);
+      }
+
+      /* FILA 4 - CONTACTO */
+      .contacto>.flotar>.izquierda{
+        width: 40%;
+      }
+      .contacto>.flotar>.derecha{
+        width: 60%
+      }
+      /* FILA 5 - PIE */
+      .pie{
+        box-sizing: border-box;
+        color: white;
+        padding: 20px 10%;
+        background-color: rgb(33, 33, 33);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="cabeza fila">
+        <div class="navbar">
+          <ul class="l-hor izquierda">
+            <li><img class="logo" src="images/latam_logo.png"></li>
+          </ul>
+          <ul class="l-hor derecha">
+            <li>Equipo</li>
+            <li>Blog</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="bloque-contenido texto-centrado">
+          <h1>COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</h1>
+          <div class="flotradores-centrados">
+            <ul>
+              <li class="boton azul">Comienza acá!</li>
+              <li class="boton verde">Más Info</li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          <p>
+            Hay una escasez gigante de desarrolladores en el mundo y más aún
+            en Latinoamérica, se necesitan más desarrolladores y Tú
+            puedes ser uno!
+          </p>
+        </div>
+    </div>
+
+    <div class="descripcion fila">
+      <div class="bloque-contenido texto-centrado">
+        <h2>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam.
+        </p>
+        <img src="images/viewing-gallery-for-happy-people.png" alt="felices">
+      </div>
+    </div>
+    <div class="solicitud fila">
+      <div class="bloque-contenido texto-centrado">
+        <h2>SOLICITA INFORMACIÓN E INCRÍBETE</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam.
+        </p>
+        <div class="flotradores-centrados">
+          <ul>
+            <li class="boton azul">Inscribete</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <p>Vive la experiencia Desafío Latam!</p>
+      </div>
+    </div>
+    <div class="contacto fila">
+      <div class="bloque-contenido flotar">
+        <div class="izquierda">
+          <h2>Contacto</h2>
+          <h3>Desafio Latam</h3>
+          <p>Ezequias Allende 2361</p>
+          <p>P: +56 9 5117 7975</p>
+        </div>
+        <div class="derecha">
+          <h2>Suscríbete</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="listado-flotador">
+            <ul>
+              <li>
+                <input type="text" value="" placeholder="Ingresa tu email..">
+              </li>
+              <li class="boton blanco">Enviar</li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="pie fila">
+      DESAFIO LATAM 2018 - CURSO FULLSTACK G14
+    </div>
+  </body>
+</html>
