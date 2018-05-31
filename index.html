@@ -101,9 +101,15 @@
       .cabeza li>.logo{
         height: 50px;
       }
-      .cabeza .l-hor.derecha>li{
+      .cabeza .l-hor.derecha>li>a{
         margin: 0 15px;
         color: rgb(100, 100, 100);
+        text-decoration: none;
+      }
+      .cabeza .l-hor.derecha>li>a:hover{
+        margin: 0 15px;
+        color: rgb(200, 200, 200);
+        text-decoration: none;
       }
       .cabeza h1{
         font-family: 'Open Sans', sans-serif;
@@ -160,9 +166,9 @@
             <li><img class="logo" src="images/latam_logo.png"></li>
           </ul>
           <ul class="l-hor derecha">
-            <li>Equipo</li>
-            <li>Blog</li>
-            <li>Contacto</li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="clearfix"></div>
@@ -183,7 +189,7 @@
         </div>
     </div>
 
-    <div class="descripcion fila">
+    <div id="equipo" class="descripcion fila">
       <div class="bloque-contenido texto-centrado">
         <h2>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h2>
         <p>
@@ -194,7 +200,7 @@
         <img src="images/viewing-gallery-for-happy-people.png" alt="felices">
       </div>
     </div>
-    <div class="solicitud fila">
+    <div id="blog" class="solicitud fila">
       <div class="bloque-contenido texto-centrado">
         <h2>SOLICITA INFORMACIÓN E INCRÍBETE</h2>
         <p>
@@ -211,7 +217,7 @@
         <p>Vive la experiencia Desafío Latam!</p>
       </div>
     </div>
-    <div class="contacto fila">
+    <div id="contacto" class="contacto fila">
       <div class="bloque-contenido flotar">
         <div class="izquierda">
           <h2>Contacto</h2>
