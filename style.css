@@ -83,15 +83,17 @@ input[type=text]{
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  
 }
-.cabeza.fila{
-  padding: 20px 0;
+.cabeza .navbar{
+  background-color: transparent;
+  border: none;
 }
 .bloque-contenido{
   max-width: 500px;
   margin: auto;
 }
-.cabeza li>.logo{
+.cabeza .logo{
   height: 50px;
 }
 .cabeza .l-hor.derecha>li>a{
