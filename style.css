@@ -83,7 +83,7 @@ input[type=text]{
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  
+
 }
 .cabeza .navbar{
   background-color: transparent;
@@ -115,12 +115,7 @@ input[type=text]{
 }
 
 /* FILA 2 - DESCRIPCION */
-.descripcion{
-  padding-top: 30px;
-}
-.descripcion img{
-  width: 70%;
-}
+
 
 /* FILA 3 - SOLICITUD */
 .solicitud{
