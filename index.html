@@ -11,7 +11,7 @@
   <body>
 <!-- ######################################################### -->
 <!-- REGION 1 -->
-    <div class="jumbotron cabeza">
+    <div class="container-fluid cabeza margen-inferior">
       <!-- ######################################################## -->
       <!-- NAVBAR -->
       <nav class="navbar navbar-inverse">
@@ -36,10 +36,13 @@
       </nav>
       <!-- ######################################################## -->
       <div class="row texto-centrado">
-        <div class="col-md-offset-4 col-md-4">
+        <div class="
+            col-xs-12
+            col-sm-offset-1 col-sm-10
+            col-md-offset-3 col-md-6">
           <h2>COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</h2>
-          <button class="btn btn-primary" type="submit">Comienza acá!</button>
-          <button class="btn btn-success" type="submit">Más Info</button>
+          <button class="btn btn-margen btn-primary" type="submit">Comienza acá!</button>
+          <button class="btn btn-margen btn-success" type="submit">Más Info</button>
           <p>
             Hay una escasez gigante de desarrolladores en el mundo y más aún
             en Latinoamérica, se necesitan más desarrolladores y Tú
@@ -50,10 +53,13 @@
     </div>
 <!-- ######################################################### -->
 <!-- REGION 2 -->
-    <div id="equipo" class="container descripcion">
+    <div id="equipo" class="container-fluid descripcion">
       <div class="row texto-centrado">
-        <div class="col-md-offset-4 col-md-4">
-          <h2>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h2>
+        <div class="
+        col-xs-12
+        col-sm-offset-1 col-sm-10
+        col-md-offset-3 col-md-6">
+          <h4>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -68,51 +74,66 @@
     </div>
 <!-- ######################################################### -->
 <!-- REGION 3 -->
-    <div id="blog" class="jumbotron solicitud">
+    <div id="blog" class="container-fluid solicitud margen-amplio">
       <div class="row texto-centrado">
-        <div class="col-md-offset-4 col-md-4">
-          <h2>SOLICITA INFORMACIÓN E INCRÍBETE</h2>
+        <div class="
+          col-xs-12
+          col-sm-offset-1 col-sm-10
+          col-md-offset-3 col-md-6">
+          <h4>SOLICITA INFORMACIÓN E INCRÍBETE</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam.
           </p>
-          <button class="btn btn-primary" type="submit">Inscribete</button>
+          <button class="btn btn-margen btn-primary" type="submit">Inscribete</button>
           <p>Vive la experiencia Desafío Latam!</p>
         </div>
       </div>
-
     </div>
 <!-- ######################################################### -->
 <!-- REGION 4 -->
-    <div id="contacto" class="container contacto">
-      <div class="bloque-contenido flotar">
-        <div class="izquierda">
-          <h2>Contacto</h2>
-          <h3>Desafio Latam</h3>
+    <div id="contacto" class="container-fluid contacto margen-inferior">
+      <div class="row">
+        <div class="
+          col-xs-5
+          col-sm-offset-1 col-sm-5
+          col-md-offset-3 col-md-3">
+          <h4>Contacto</h4>
+          <h5>Desafio Latam</h5>
           <p>Ezequias Allende 2361</p>
           <p>P: +56 9 5117 7975</p>
         </div>
-        <div class="derecha">
-          <h2>Suscríbete</h2>
+        <div class="
+          col-xs-7
+          col-sm-5
+          col-md-3">
+          <h4>Suscríbete</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="listado-flotador">
-            <ul>
-              <li>
-                <input type="text" value="" placeholder="Ingresa tu email..">
-              </li>
-              <li class="boton blanco">Enviar</li>
-            </ul>
-          </div>
-          <div class="clearfix"></div>
+          <form class="form-inline">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Ingresa tu email..">
+            </div>
+            <button type="submit" class="btn btn-default">Enviar</button>
+        </form>
         </div>
       </div>
-      <div class="clearfix"></div>
     </div>
 <!-- ######################################################### -->
 <!-- REGION 5 -->
-    <div class="jumbotron pie">
-      DESAFIO LATAM 2018 - CURSO FULLSTACK G14
+    <div class="container-fluid pie">
+      <div class="row">
+        <div class="
+          col-xs-12
+          col-sm-offset-1 col-sm-10
+          col-md-offset-3 col-md-6">
+          <h6>DESAFIO LATAM 2018 - CURSO FULLSTACK G14</h6>
+        </div>
+      </div>
     </div>
 <!-- ######################################################### -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
